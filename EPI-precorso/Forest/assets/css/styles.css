@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,600&family=Prata&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+.main-section {
+    margin: auto;
+    width: 50%;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.image-container {
+    height: 437px;
+    width: 314px;
+}
+
+h1 {
+    font-size: 54px;
+    font-family: "Prata";
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Prata';
+    margin-top: -30px;
+}
+
+a {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: #07b092; 
+}
+
+h6 {
+    font-size: 1em;
+    padding: 22px;
+    margin-bottom: 0px;
+    margin-top: 24px;
+    color:white;
+    border-radius:6px;
+    background: linear-gradient(120deg, #07b092, black);
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+li {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    border-bottom: 1px;
+    border-color: #dfdfdf;
+}
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
