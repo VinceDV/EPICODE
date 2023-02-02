@@ -1,23 +1,44 @@
-/* Selettore di DISCENDENTI*/
-
-#container h3 {
-    font-size: 25px;
-    color: red;
+html, body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-/*Selettore di figli DIRETTI*/
-
-#figlidiretti > h3 {
-    font-size: 25px;
-    color: red;
+header {
+    text-align: center;
+}
+.container {
+    width: 40%;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+}
+video {
+    border-radius: 10px;
+    width: 100%;
+}
+nav {
+    font-size: 15px;
+    background-color: #fefbf1;
+    border-top: 1px solid #ffd977;
+    color: #004d4d;
+    margin-top: 1rem;
+    padding: 0.1rem;
+}
+.caption {
+    text-align: center;
+    color: grey;
+}
+#featured {
+    color: #ca6c00;
+}
+span > a {
+    color: #004d4d;
 }
 
-/*Selettore di fratelli ADIACENTI*/
-
-h2 + h3 {
-    text-decoration: underline;
+.side {
+    border-left: 1px solid rgb(236, 180, 75);
+    padding-left: 1rem;
 }
 
-li + li {
-    color: red;
-    margin-left: 10px;
+.borderArticle {
+    border-bottom: 1px solid rgb(176, 218, 238);
 }

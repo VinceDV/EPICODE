@@ -1,50 +1,106 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS1</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Ricetta</title>
 </head>
+
 <body>
+  <header>
+    <img width="150px" src="assets/img/logo.png" alt="" />
+    <nav>
+      <p>Part of <strong>A SIMPLY BEAUTIFUL THANKSGIVING</strong></p>
+    </nav>
+    <h1>
+      Focaccia with Caramelized Onions,<br />
+      Cranberries, and Brie
+    </h1>
+  </header>
 
-    <h1>SELETTORI COMBINATORI</h1>
-    
-    <h2>Selettore di discendenti</h2>
-    <div id="container">
-        <h3>titolo del container</h3>
-        <h4>contenuto</h4>
-    </div>
-    <h3>contenuto esterno al container</h3>
+  <div class="container">
+    <aside>
+      <p>
+        Wow your taste buds with this festive focaccia appetizer topper with
+        sweet caramelized onions, tart <br />
+        cranberries, and creamy brie. It will become your new favorite holiday
+        starter!
+      </p>
+      <video class="video" controls poster="/assets/img/focaccia.png">
+        <source src="/assets/img/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="caption">
+        <p>Image: Sally Vegas</p>
+      </div>
+      <div class="side">
+        <h3>
+          <span id="featured">FEATURED IN:</span><br />
+          <span>
+            <a href="javascript:void(0)">Fresh Cranberry Recipes That Go Beyond Sauce</a></span>
+        </h3>
+      </div>
+    </aside>
 
-    <hr>
+    <main class="main">
+      <section>
+        <article>
+          <div class="borderArticle">
+            <h2>Ingredients</h2>
+          </div>
+          <h3>For the focaccia:</h3>
+          <ul>
+            <li>4 cups (500g) all-purpose flour</li>
+            <li>1½ teaspoons instant yeast</li>
+            <li>1½ teaspoons salt</li>
+            <li>1¾ cups (350g) lukewarm water</li>
+            <li>¼ cup virgin olive oil, plus more for the pan</li>
+          </ul>
+        </article>
+        <article>
+          <h3>For the topping:</h3>
+          <ul>
+            <li>3 medium yellow onions, thinly sliced</li>
+            <li>1 tablespoon balsamic vinegar</li>
+            <li>1-2 tablespoons olive oil, for brushing on top</li>
+            <li>
+              10 ounces brie, cut into cubes (scrape rind off with a paring
+              knife if desired, though it's not necessary)
+            </li>
+            <li>1½ cups fresh or frozen cranberries</li>
+          </ul>
+        </article>
+      </section>
+      <article>
+        <div class="borderArticle">
+          <h2>Method</h2>
+        </div>
+        <ol>
+          <li>
+            <b>Make the focaccia dough</b>
+            <p>
+              In a medium-sized mixing bowl, or in a stand mixer with a paddle
+              attachment, mix together all the dough ingredients until the
+              flour is fully absorbed. You don't need to actually knead the
+              dough, thought i sometimes knead it a few times in the bowl when
+              mixing to incorporate the last of the flour...
+            </p>
+          </li>
+        </ol>
+      </article>
+    </main>
 
-    <h2>Selettore di figli diretti</h2>
-
-    <div id="figlidiretti">
-        <h3>Titolo sezione</h3>
-            <nav>
-                <h3>Titolo menu</h3>
-            </nav>
-        <h3>Titolo articolo</h3>
-    </div>
-
-    <hr>
-
-    <h2>Selettore di fratelli adiacenti</h2>
-
-    <h2>Titolo capitolo</h2>
-    <h3>Titolo paragrafo 1</h3>
-    <p>testo paragrafo</p>
-    <h3>Titolo paragrafo 2</h3>
-
-    <ul>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-        <li>Elemento 5</li>
-    </ul>
-
+    <footer>
+      <p>
+        Read more on
+        <span><a
+            href="https://www.simplyrecipes.com/recipes/focaccia_with_caramelized_onions_cranberries_and_brie/">Simply
+            recipes</a></span>
+      </p>
+    </footer>
+  </div>
 </body>
+
 </html>
