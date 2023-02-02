@@ -1,0 +1,23 @@
+/* Selettore di DISCENDENTI*/
+
+#container h3 {
+    font-size: 25px;
+    color: red;
+}
+/*Selettore di figli DIRETTI*/
+
+#figlidiretti > h3 {
+    font-size: 25px;
+    color: red;
+}
+
+/*Selettore di fratelli ADIACENTI*/
+
+h2 + h3 {
+    text-decoration: underline;
+}
+
+li + li {
+    color: red;
+    margin-left: 10px;
+}
