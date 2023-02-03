@@ -6,7 +6,7 @@ body {
   text-align: center;
   width: 97%;
   margin: 0 auto;
-  padding: .4em 0;
+  padding: 0.4em 0;
   font-family: "Poppins", sans-serif;
 }
 header {
@@ -38,8 +38,8 @@ nav ul {
   text-align: center;
 }
 .container {
-  padding: 1em 1em;
-  margin-top: 0.5em;
+  padding: .5em 1em;
+  margin-top: 1.5em;
   background-color: white;
   text-align: left;
   font-weight: 500;
