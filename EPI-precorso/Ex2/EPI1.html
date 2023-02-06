@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Streaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center">
+        <div class="header">
+            <img class="logo" src="./assets/img/musical-note.png" alt="">
+            <h1>Benvenuto su Streamfy!</h1>
+        </div>
+        <hr>
+        <h2>Inserisci i tuoi dati per cominciare:</h2>
+        <form action="" class="form">   
+            <div class="input-group">
+                <input type="text" name="fname" id="name" required>
+                <label for="loginUser">Nome</label>
+            </div>
+            <div class="input-group">
+                <input type="text" name="lname" id="lname" required>
+                <label for="loginUser">Cognome</label>
+            </div>
+            <div class="input-group">
+                <input type="email" name="email" id="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" id="psw" required>
+                <label for="password">Password</label>
+            </div>
+            <div class="input-group">
+                <input type="date" name="date" required>
+                <label for="date" class="white"></label>
+            </div>
+            <div class="input-group">
+                <input type="tel" name="tel" id="tel" required>
+                <label for="tel">Telefono</label>
+            </div>
+            <div class="cb">
+                <h2 class="main">Che musica ti piace?</h2>
+                <div class="check">
+                    <input class="checkbox" type="checkbox">Rock
+                    <input class="checkbox" type="checkbox">Pop
+                    <input class="checkbox" type="checkbox">Metal
+                    <input class="checkbox" type="checkbox">Indie
+                    <input class="checkbox" type="checkbox">Classica
+                </div>
+            </div>
+            <div class="pippo">
+                <div class="terms">
+                    <a href="#">Termini e condizioni</a>
+                    <input type="checkbox">Accetto</button>
+                </div>
+                <button id="submit" type="submit" onclick="alert('Registrazione inviata.')">Invia registrazione</button>
+            </div>
+        </form>
+    </div>    
+    </body>
+</html>
