@@ -16,6 +16,7 @@ var auto = 'scritto da Javascript';
 var output = 'output';
 var _pet2 = 'pantera';
 
+
 document.write('<h1>Iniziamo la nostra pratica</h1>');
 document.write('<p>output scritto da javascript</p>');
 document.write('<p>pantera scritto da javascript</p>');
