@@ -26,8 +26,7 @@ document.getElementById('let2').innerHTML = cliente2;
 const iniziale = 15;
 
 document.getElementById('iniziale').innerHTML += iniziale;
-var somma = iniziale + iniziale;
-document.getElementById('valore1').innerHTML += somma + ", " + (somma + 1);
+document.getElementById('valore1').innerHTML += iniziale + iniziale + ", " + (iniziale + iniziale + 1);
 
 document.getElementById('valore2').innerHTML += iniziale - 10 + ", " + (iniziale-11);
 
