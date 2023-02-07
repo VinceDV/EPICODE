@@ -1,11 +1,11 @@
-const cliente = 'Aldo';
-var aldo = 'cliente';
-let pie = 3.14;
-document.getElementById('concatena').innerHTML = cliente + ", " + aldo + ", " + pie;
+var cliente = 'Aldo';
+let stato = 'cliente';
+const pie = 3.14;
+document.getElementById('concatena').innerHTML = cliente + ", " + stato + ", " + pie;
 
 //
 
-var catena = cliente + ', ' + aldo + ', ' + pie;
+var catena = cliente + ', ' + stato + ', ' + pie;
 document.getElementById('concatena2').innerHTML = catena;
 
 //
