@@ -34,4 +34,4 @@ document.getElementById('valore3').innerHTML += iniziale * 3;
 
 document.getElementById('valore4').innerHTML += iniziale / 3;
 
-document.getElementById('valore5').innerHTML += iniziale + " e' un numero"
+document.getElementById('valore5').innerHTML += iniziale + " e' un numero";
