@@ -41,7 +41,7 @@
     if (x == 8) {
         console.log('verificato')
     }
-    else if (x == 8) {
+    else if (y == 8) {
         console.log('verificato')
     }
     else if (x + y == 8) {
