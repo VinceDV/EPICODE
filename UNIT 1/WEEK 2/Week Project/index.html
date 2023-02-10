@@ -8,28 +8,30 @@
   </head>
   <body>
     <h1>La mia Calcolatrice con JS</h1>
-    <div class="calcolatrice">
-      <input size="" type="text" id="textbox" class="textbox2" readonly value="">
-      <div class="buttons">
-        <button type="button" onclick="cancella()" class="button" id="cancella">AC</button>
-        <button type="button" onclick="scriviModulo()" class="button" id="modulo">%</button>
-        <button type="button" onclick="scrivi7()" class="button" id="7">7</button>
-        <button type="button" onclick="scrivi8()" class="button" id="8">8</button>
-        <button type="button" onclick="scrivi9()" class="button" id="9">9</button>
-        <button type="button" onclick="scriviDivisione()" class="button" id="divisione">÷</button>
-        <button type="button" onclick="scriviMoltiplicazione()" class="button" id="moltiplicazione">X</button>
-        <button type="button" onclick="scrivi4()" class="button" id="4">4</button>
-        <button type="button" onclick="scrivi5()" class="button" id="5">5</button>
-        <button type="button" onclick="scrivi6()" class="button" id="6">6</button>
-        <button type="button" onclick="scriviSottrazione()" class="button" id="sottrazione">-</button>
-        <button type="button" onclick="scriviAddizione()" class="button" id="addizione">+</button>
-        <button type="button" onclick="scrivi1()" class="button" id="1">1</button>
-        <button type="button" onclick="scrivi2()" class="button" id="2">2</button>
-        <button type="button" onclick="scrivi3()" class="button" id="3">3</button>
-        <button type="button" onclick="scriviPunto()" class="button" id="punto">.</button>
-        <button type="button" onclick="scrivi0()" class="button" id="0">0</button>
-        <button type="button" onclick="risolvi()" class="button" id="uguale">=</button>
-      </div>
+    <div class="container">
+        <div class="calcolatrice">
+          <input size="" type="text" id="textbox" class="textbox2" readonly value="">
+          <div class="buttons">
+            <button type="button" onclick="cancella()" class="button" id="cancella">AC</button>
+            <button type="button" onclick="scrivi('%')" class="button" id="modulo">%</button>
+            <button type="button" onclick="scrivi(7)" class="button" id="7">7</button>
+            <button type="button" onclick="scrivi(8)" class="button" id="8">8</button>
+            <button type="button" onclick="scrivi(9)" class="button" id="9">9</button>
+            <button type="button" onclick="scrivi('/')" class="button" id="divisione">÷</button>
+            <button type="button" onclick="scrivi('*')" class="button" id="moltiplicazione">X</button>
+            <button type="button" onclick="scrivi(4)" class="button" id="4">4</button>
+            <button type="button" onclick="scrivi(5)" class="button" id="5">5</button>
+            <button type="button" onclick="scrivi(6)" class="button" id="6">6</button>
+            <button type="button" onclick="scrivi('-')" class="button" id="sottrazione">-</button>
+            <button type="button" onclick="scrivi('+')" class="button" id="addizione">+</button>
+            <button type="button" onclick="scrivi(1)" class="button" id="1">1</button>
+            <button type="button" onclick="scrivi(2)" class="button" id="2">2</button>
+            <button type="button" onclick="scrivi(3)" class="button" id="3">3</button>
+            <button type="button" onclick="scrivi('.')" class="button" id="punto">.</button>
+            <button type="button" onclick="scrivi(0)" class="button" id="0">0</button>
+            <button type="button" onclick="risolvi()" class="button" id="uguale">=</button>
+          </div>
+        </div>
     </div>
 
     <script src="assets/js/script.js"></script>
