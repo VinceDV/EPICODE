@@ -1,0 +1,65 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background:white;
+}
+h1 {
+    text-align: center;
+    margin-top: 4em;
+}
+input {
+    font-size: larger;
+    font-weight: 900;
+    height: 2em;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.calcolatrice {
+    margin: 0 auto;
+    margin-top: 5em;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10%;
+    width: 15%;
+    padding: 3em;
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.button:hover {
+    background-color: white;
+    color: black;
+    border: none;
+}
+.buttons {
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1em;
+
+}
+.button {
+    background-color: black;
+    cursor: pointer;
+    width: 3em;
+    padding: 4px;
+    margin: 4px;
+    border-radius: 50px;
+    font-size: medium;
+    font-weight: 800;
+    color: white;
+}
+#punto {
+    margin-right: 4.1em;
+}
+
+#uguale {
+    margin-top: 1em;
+    padding: 1em;
+    width: 11em;
+}
+.textbox2 {
+    text-align: right;
+}

@@ -210,7 +210,7 @@ CONSOLE LOG
 */
 var messaggio = '';
 
-switch (true) {
+switch (true) { // verifica quale di queste condizioni restituisce true
 
     case massaTotale < 500:
         messaggio = 'Ship is under loaded';
