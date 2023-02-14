@@ -27,7 +27,7 @@ Scrivi una funzione per creare un array di soli valori multipli di 5, da 1 a 100
 var array5 = [];
 let j = 1;
 while (j <= 100) {
-    if (j%5 === 0) {
+    if (j % 5 === 0) {
         array5.push(j)
     }
     j++;
@@ -41,18 +41,18 @@ Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve esse
 var array10 = [];
 function aggiungi10() {
     for (let i = 0; i < 10; i++) {
-    array10.push(Math.floor(Math.random()* 101));
+        array10.push(Math.floor(Math.random() * 101));
     } return array10;
 }
 console.log(aggiungi10());
 /* ESERCIZIO 5
 Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici.
 */
-var numeri = [2,5,8,9,3,1,13,14,16];
+var numeri = [2, 5, 8, 9, 3, 1, 13, 14, 16];
 var soloPari = [];
 function dammiPari() {
     for (i = 0; i < numeri.length; i++) {
-        if (i%2 === 0) {
+        if (i % 2 === 0) {
             soloPari.push(i);
         }
     } return soloPari;
@@ -224,23 +224,32 @@ Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzi
 
 
 let bottone = document.getElementById('myBtn');
-let filmTrovato = document.getElementById('filmTrovato').innerHTML;
+let risultatoFinale = document.getElementById('filmTrovato');
 
-window.addEventListener('load', function() {for (let i = 0; i < movies.length; i++) {
-    document.getElementById('select').innerHTML += `<option value="${movies[i].imdbID}">${movies[i].Title}</option>`;
-}});
-
-bottone.addEventListener('click', getMovieById());
-
-function getMovieById() {
+window.addEventListener('load', function () {
     for (let i = 0; i < movies.length; i++) {
-        let filmScelto = document.getElementById('select').value;
-        if (filmScelto == movies[i].imdbID) {
-            filmTrovato = movies[i];
-        } else {
-            filmTrovato = 'Seleziona un valore';
+        document.getElementById('select').innerHTML += `<option value="${movies[i].imdbID}">${movies[i].Title}</option>`;
+    }
+});
+
+function trovaFilm() {
+    var idSelezionato = document.getElementById('select').value;
+    for (let i = 0; i < movies.length; i++) {
+        if (idSelezionato == movies[i].imdbID) {
+            return movies[i];
         }
-  }};
+    }
+};
+
+bottone.addEventListener('click', function() {
+    var filmTrovato = trovaFilm();
+    if (filmTrovato != undefined) {
+        risultatoFinale.innerHTML = `Il film scelto e':${filmTrovato.Title}, l'anno di uscita e' il ${filmTrovato.Year} <br><img src="${filmTrovato.Poster}">`
+    } else {
+        risultatoFinale.innerHTML = 'Il film selezionato non esiste';
+    }
+});
+
 /* ESERCIZIO 17
 Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
