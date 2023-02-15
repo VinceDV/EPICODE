@@ -12,10 +12,10 @@ addBtn.addEventListener('click', function() {
   const checkbox = document.createElement('input');
   const taskText = document.createElement('span');
   const deleteBtn = document.createElement('button');
-
+  
   checkbox.type = 'checkbox';
   taskText.innerText = inputTask.value;
-  deleteBtn.innerText = 'Delete';
+  deleteBtn.innerText = 'X';
   
   task.appendChild(checkbox);
   task.appendChild(taskText);
