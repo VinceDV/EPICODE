@@ -158,11 +158,12 @@ changeFooterText();
 const inputField = document.getElementById('input-field');
 
 inputField.addEventListener('input', function (event) {
-    console.log(event.target.value)});
-    /* ESERCIZIO 12
-     Crea un messaggio di benvenuto con un alert quando la pagina ha finito di caricarsi.
-    */
-    var nomeUtente = 'Vince';
-      window.onload = function () {
-        alert('Benvenuto ' + nomeUtente)//
-     };
+    console.log(event.target.value)
+});
+/* ESERCIZIO 12
+ Crea un messaggio di benvenuto con un alert quando la pagina ha finito di caricarsi.
+*/
+var nomeUtente = 'Team 7!';
+window.onload = function () {
+    alert('Benvenuto ' + nomeUtente)//
+};
