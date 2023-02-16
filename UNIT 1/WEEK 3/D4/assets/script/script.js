@@ -52,14 +52,33 @@ changeUrls();
 /* ESERCIZIO 5
  Scrivi una funzione per aggiungere un nuovo elemento alla seconda lista non-ordinata.
 */
-
-const addToTheSecond = function () {
+var content = 'Quarto'
+const addToTheSecond = function (content) {
     var node = document.createElement('li');
-    node.appendChild(document.createTextNode('Quarto'));
+    node.appendChild(document.createTextNode(content));
     document.getElementById('secondList').appendChild(node);
     //
 };
-addToTheSecond();
+addToTheSecond(content);
+
+// secondo modo
+/*const addToTheSecond = function (content) {
+  var lista2 = document.getElementById('secondList');
+  var newElement = document.createElement('li');
+  newElement.textContent = content;
+  lista2.appendChild(newElement);
+}
+addToTheSecond('Quarto')*/
+// terzo modo
+/*const addToTheSecond = function (content) {
+    var lista2 = document.getElementById('secondList');
+    var elementoLi = document.createElement('li');
+    var contenutoLi = document.createTextNode(content);
+    elementoLi.appendChild(contenutoLi);
+    lista2.appendChild(elementoLi);
+}
+addToTheSecond();*
+
 /* ESERCIZIO 6
  Scrivi una funzione per aggiungere un secondo paragrafo al primo div.
 */
@@ -82,6 +101,13 @@ const firstUlDisappear = function () {
 }
 
 firstUlDisappear();
+
+// const firstUlDisappear = function () {
+//     var primoUl = document.querySelector('ul');
+//     primoUl.innerHTML = '';
+// }
+// firstUlDisappear();
+
 /* ESERCIZIO 8
  Scrivi una funzione per rendere verde lo sfondo di ogni lista non-ordinata.
 */
