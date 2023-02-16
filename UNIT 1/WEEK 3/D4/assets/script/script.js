@@ -137,6 +137,6 @@ inputField.addEventListener('input', function (event) {
      Crea un messaggio di benvenuto con un alert quando la pagina ha finito di caricarsi.
     */
     var nomeUtente = 'Vince';
-    //   window.onload = function () {
-    //     alert('Benvenuto ' + nomeUtente)//
-    //  };
+      window.onload = function () {
+        alert('Benvenuto ' + nomeUtente)//
+     };
