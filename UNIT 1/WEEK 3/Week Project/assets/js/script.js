@@ -136,13 +136,13 @@ console.log(dice());
 */
 
 
-let parola = 'I have 4dogs';
+let parola = 'I have 4 dogs';
 let result = '';
 function onlyLetters(parola) {
     for (let i = 0; i < parola.length; i++) {
-        let char = parola[i];
-        if (isNaN(char)) {
-            result += char;
+
+        if (isNaN(parola[i])) {
+            result += parola[i];
         }
     } return result;
 }
@@ -361,8 +361,11 @@ const movies = [
             'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg',
     },
 ]
-
-
+// function funzionePascal(movies) {
+//     movies.map(element => console.log(element.Title)
+//     ); 
+// }
+// funzionePascal(movies)
 /* ESERCIZIO 11
   Scrivi una funzione chiamata "deleteProp" che riceve un oggetto e una stringa come parametri; deve ritornare l'oggetto fornito dopo aver eliminato
   in esso la proprietà chiamata come la stringa passata come secondo parametro.
