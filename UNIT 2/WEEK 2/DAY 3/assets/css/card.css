@@ -1,0 +1,31 @@
+body {
+  color: #742305;
+}
+.card img {
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  width: 300px;
+}
+.card {
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+}
+#contenuto {
+  background-color: #fbf7e3;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  display: flex;
+}
+#prodotto {
+}
+#bottone {
+  border-radius: 25px;
+  padding: 1em 0;
+  width: 50%;
+  align-self: center;
+  margin-bottom: 1em;
+  background-color: #f3df85;
+}

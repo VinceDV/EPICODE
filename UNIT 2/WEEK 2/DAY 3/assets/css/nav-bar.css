@@ -1,0 +1,28 @@
+body {
+  color: #742305;
+}
+nav {
+  background-color: #fbf7e3;
+  padding: 2em;
+  border-radius: 60px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+ul li img {
+  width: 60px;
+}
+li {
+  background-color: rgb(255, 210, 114);
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+}
+#shop {
+  justify-content: space-around;
+  font-weight: 900;
+}
