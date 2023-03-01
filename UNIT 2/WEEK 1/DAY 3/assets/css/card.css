@@ -1,31 +1,51 @@
 body {
   color: #742305;
+  font-family: "Roboto", sans-serif;
 }
-.card img {
-  border-top-right-radius: 40px;
-  border-top-left-radius: 40px;
-  width: 300px;
-}
+
 .card {
   border: 1px solid transparent;
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 400px;
+  width: 20%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  width: 100%;
 }
 #contenuto {
   background-color: #fbf7e3;
-  border-bottom-right-radius: 40px;
-  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 1em;
 }
-#prodotto {
+#prodotto h2 {
+  margin-bottom: 0;
+  font-size: 1.4em;
+}
+#prodotto p {
+  margin-top: 0;
+  text-align: center;
+}
+#prezzo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
 }
 #bottone {
   border-radius: 25px;
+  border: none;
   padding: 1em 0;
   width: 50%;
-  align-self: center;
   margin-bottom: 1em;
   background-color: #f3df85;
+  display: flex;
+  justify-content: center;
 }

@@ -3,26 +3,31 @@ body {
 }
 nav {
   background-color: #fbf7e3;
-  padding: 2em;
+  padding: 1em;
   border-radius: 60px;
 }
-ul {
-  display: flex;
+nav ul {
   list-style: none;
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 ul li img {
   width: 60px;
 }
-li {
+nav ul li {
   background-color: rgb(255, 210, 114);
   border-radius: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 15%;
+  padding: 15px 20px;
+  font-weight: 700;
 }
 #shop {
-  justify-content: space-around;
+  display: flex;
+  align-items: center;
   font-weight: 900;
+}
+#shop p {
+  padding-left: 2em;
+  font-size: 1.5em;
+  margin: 0;
 }

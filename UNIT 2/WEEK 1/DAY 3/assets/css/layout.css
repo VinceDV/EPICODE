@@ -1,59 +1,83 @@
 body {
   color: #742305;
-}
-.card img {
-  border-top-right-radius: 40px;
-  border-top-left-radius: 40px;
-  width: 300px;
+  font-family: "Roboto", sans-serif;
 }
 .card {
   border: 1px solid transparent;
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 400px;
+  width: 20%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  width: 100%;
 }
 #contenuto {
   background-color: #fbf7e3;
-  border-bottom-right-radius: 40px;
-  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 1em;
 }
-#prodotto {
+#prodotto h2 {
+  margin-bottom: 0;
+  font-size: 1.4em;
+}
+#prodotto p {
+  margin-top: 0;
+  text-align: center;
+}
+#prezzo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
 }
 #bottone {
   border-radius: 25px;
+  border: none;
   padding: 1em 0;
   width: 50%;
-  align-self: center;
   margin-bottom: 1em;
   background-color: #f3df85;
+  display: flex;
+  justify-content: center;
 }
 
 nav {
   background-color: #fbf7e3;
-  padding: 2em;
+  padding: 1em;
   border-radius: 60px;
 }
-ul {
-  display: flex;
+nav ul {
   list-style: none;
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 ul li img {
   width: 60px;
 }
-li {
+nav ul li {
   background-color: rgb(255, 210, 114);
   border-radius: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 15%;
+  padding: 15px 20px;
+  font-weight: 700;
 }
 #shop {
-  justify-content: space-around;
+  display: flex;
+  align-items: center;
   font-weight: 900;
+}
+#shop p {
+  padding-left: 2em;
+  font-size: 1.5em;
+  margin: 0;
 }
 
 #content {
@@ -86,23 +110,39 @@ li {
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  li {
-    padding: 1em;
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  #shop p {
+    padding-left: 0.6em;
+  }
+  nav ul li {
+    font-size: 0.6em;
+    font-weight: bolder;
   }
   #container-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
-
-  #content {
+  #prodotto {
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
+    flex-direction: column;
+  }
+  .card {
+    width: 40%;
+    margin-bottom: 1em;
+  }
+  #prodotto {
+    font-size: 0.8em;
   }
   #miele img {
     width: 100%;
+  }
+  #content {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1em;
   }
 }
