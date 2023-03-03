@@ -178,7 +178,7 @@ article {
     justify-content: flex-end;
     width: 100%;
     position: sticky;
-    top: 0;
+    top: 5em;
 }
 #primaUl, #secondaUl {
     display: flex;
@@ -199,13 +199,12 @@ article {
 
 .infinite .articoli {
     display: flex;
-    flex-direction: column;
-    margin: 0;
-    width: 80%;
+    margin: 2em 0;
+    width: 60%;
 }
 .fotoLato {
     display: flex;
-    align-items: start;
+    align-items: end;
     justify-content: end;
 }
 .bookmark {
@@ -217,10 +216,10 @@ img, .nome, button {
     cursor: pointer;
 }
 .fotoArt{
-    width: 30%;
+    width: 70%;
 }
 .infinite .articoli span img, .infinite .articoli .nome img {
-    width: 2%;
+    width: 5%;
 }
 
 .lastBtn {
