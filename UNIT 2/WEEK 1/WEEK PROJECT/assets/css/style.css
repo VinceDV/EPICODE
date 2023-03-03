@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,600&family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,600&family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@400;700&family=Spectral&display=swap");
+html,
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+nav {
+  background-color: #ffc017;
+}
+.navbar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+  background-color: #ffc017;
+  z-index: 1;
+}
+
+nav button {
+  border-radius: 25px;
+  color: white;
+  background-color: black;
+  padding: 1em;
+  cursor: pointer;
+  box-sizing: content-box;
+  padding: 0.8em 1.4em;
+}
+#curious button {
+  background-color: rgb(27, 26, 26);
+  font-size: larger;
+  padding: 0.4em 2.2em;
+}
+#curious button:hover {
+  background-color: black;
+}
+ul {
+  list-style: none;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.navbar ul li {
+  padding: 0 1em;
+}
+.sottoNav {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid black;
+  background-color: #ffc017;
+}
+#curious h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 7em;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+#curious h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7em;
+  font-weight: 400;
+}
+#curious button {
+  margin-bottom: 2em;
+}
+#curious {
+  width: 50%;
+  margin-right: 6em;
+  margin-bottom: 3em;
+}
+#emme {
+  width: 30%;
+}
+#emme svg {
+    margin-top: 2em;
+    padding: .5em 0;
+
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+#trending {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 0;
+    width: 70%;
+}
+#titoloTrending {
+    font-size: 5em;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+}
+#trending h3 {
+    font-size: .2em;
+    font-weight: 700;
+    padding-left: .6em;
+}
+.gruppo-articoli {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main .articoli {
+    width: 30%;
+    margin: 0;
+    font-size: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.articoli p {
+    font-weight: bold;
+    width: 80%;
+    display: flex;
+}
+.articoli .date {
+    font-size: smaller;
+    color: rgb(129, 128, 128);
+    
+}
+.nome {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.nome img {
+    width: 6%;
+    margin-right: .6em;
+    border-radius: 25px;
+}
+main .numero {
+    font-size: 2em;
+    color: rgb(185, 181, 181);   
+}
+main .numeri {
+    display: flex;
+}
+main .articoli span {
+    display: flex;
+}
+.articoli span img {
+    width: 5%;
+    margin-left: .3em;
+}
+
+#sezione {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid rgb(219, 215, 215);
+    margin: 0 6em;
+}
+.infinite {
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article {
+    width: 90%;
+}
+#discover {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+#primaUl, #secondaUl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+
+}
+#primaUl {
+    border-bottom: 1px solid rgb(219, 211, 211);
+    padding-bottom: 2em;
+}
+
+#discover button {
+    margin: .4em;
+    border: 1px solid rgb(221, 218, 218);
+    padding: .6em;
+}
+
+.infinite .articoli {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 80%;
+}
+.fotoLato {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+.bookmark {
+    align-self: flex-end;
+    width: 2em;
+    margin-right: 2em;
+}
+img, .nome, button {
+    cursor: pointer;
+}
+.fotoArt{
+    width: 30%;
+}
+.infinite .articoli span img, .infinite .articoli .nome img {
+    width: 2%;
+}
+
+.lastBtn {
+    border-radius: 25px;
+    border: none;
+    padding: .5em;
+    transition: .4s;
+}
+
+.lastBtn:hover {
+    background-color: rgb(238, 228, 228);
+}
