@@ -1,321 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-</head>
+    <title>Viaggi Travel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="assets/img/volo.png" width="40" alt="logo" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Saldi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Welcome Summer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Last Minute</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Recensioni</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Cerca posti da sogno"
-                        aria-label="Search" />
-                    <button class="btn btn-outline-danger" type="submit">Cerca</button>
-                </form>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="assets/img/volo.png" width="40" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Saldi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"
+                >Welcome Summer</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Last Minute</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Recensioni</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Cerca posti da sogno"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-danger" type="submit">Cerca</button>
+          </form>
         </div>
+      </div>
     </nav>
     <div class="container">
-        <div class="row">
-            <div class="col col-12 d-flex">
-                <h1>Eveline-R</h1>
-                <p class="text-center">--Feel the Freedom</p>
-            </div>
-            <div class="col col-12">
-                <h2>Scopri le destinazioni piu' calde del momento!</h2>
-            </div>
-            <div class="col col-3">
-                <button type="button" class="btn btn-primary">Prenota ora</button>
-            </div>
+      <div class="row">
+        <div class="col col-12 d-flex">
+          <h1>Eveline-R</h1>
+          <p class="text-center">--Feel the Freedom</p>
         </div>
+        <div class="col col-12">
+          <h2>Scopri le destinazioni piu' calde del momento!</h2>
+        </div>
+        <div class="col col-3">
+          <button type="button" class="btn btn-primary">Prenota ora</button>
+        </div>
+      </div>
 
-        <!-- Saldi -->
+      <!-- Saldi -->
 
-        <div class="row m-2 mt-5">
-            <h2 class="col col-6">Saldi</h2>
-            <a class="col col-6" href="#">
-                <h6>Nascondi sezione</h6>
-            </a>
+      <div class="row m-2 mt-5">
+        <h2 class="col col-6">Saldi</h2>
+        <a class="col col-6" href="#">
+          <h6>Nascondi sezione</h6>
+        </a>
+      </div>
+      <div class="row m-2">
+        <div class="col col-sm-6 col-md-4 col-lg-3 mb-2">
+          <div class="card border border-info">
+            <img
+              src="assets/img/alaska.jpg"
+              class="card-img-top"
+              alt="alaska"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Alaska</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
-        <div class="row m-2">
-            <div class="col col-sm-6 col-md-4 col-lg-3 mb-2">
-                <div class="card border border-info">
-                    <img src="assets/img/alaska.jpg" class="card-img-top" alt="alaska" />
-                    <div class="card-body">
-                        <h5 class="card-title">Alaska</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
+        <div class="col col-sm-6 col-md-4 col-lg-3">
+          <div class="card border border-info">
+            <img
+              src="assets/img/alaska.jpg"
+              class="card-img-top"
+              alt="alaska"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Alaska</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
-            <div class="col col-sm-6 col-md-4 col-lg-3">
-                <div class="card border border-info">
-                    <img src="assets/img/alaska.jpg" class="card-img-top" alt="alaska" />
-                    <div class="card-body">
-                        <h5 class="card-title">Alaska</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-sm-6 col-md-4 col-lg-3">
-                <div class="card border border-info">
-                    <img src="assets/img/alaska.jpg" class="card-img-top" alt="alaska" />
-                    <div class="card-body">
-                        <h5 class="card-title">Alaska</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-sm-6 col-md-4 d-md-none d-lg-inline col-lg-3">
-                <div class="card border border-info">
-                    <img src="assets/img/alaska.jpg" class="card-img-top" alt="alaska" />
-                    <div class="card-body">
-                        <h5 class="card-title">Alaska</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col col-sm-6 col-md-4 col-lg-3">
+          <div class="card border border-info">
+            <img
+              src="assets/img/alaska.jpg"
+              class="card-img-top"
+              alt="alaska"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Alaska</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-6 col-md-4 d-md-none d-lg-inline col-lg-3">
+          <div class="card border border-info">
+            <img
+              src="assets/img/alaska.jpg"
+              class="card-img-top"
+              alt="alaska"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Alaska</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- WELCOME SUMMER -->
+      <!-- WELCOME SUMMER -->
 
-        <div class="row m-2 mt-5">
-            <h2 class="col col-12">Welcome Summer</h2>
+      <div class="row m-2 mt-5">
+        <h2 class="col col-12">Welcome Summer</h2>
+      </div>
+      <div class="row m-1">
+        <div class="mb-3 col col-sm-6 col-lg-4">
+          <div class="card">
+            <img
+              src="assets/img/alaska.jpg"
+              class="card-img-top"
+              alt="alaska"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Alaska</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
-        <div class="row m-1">
-            <div class="mb-3 col col-sm-6 col-lg-4">
-                <div class="card">
-                    <img src="assets/img/alaska.jpg" class="card-img-top" alt="alaska" />
-                    <div class="card-body">
-                        <h5 class="card-title">Alaska</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
+        <div class="col col-sm-6 col-lg-4">
+          <div class="card">
+            <img
+              src="assets/img/alaska.jpg"
+              class="card-img-top"
+              alt="alaska"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Alaska</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
-            <div class="col col-sm-6 col-lg-4">
-                <div class="card">
-                    <img src="assets/img/alaska.jpg" class="card-img-top" alt="alaska" />
-                    <div class="card-body">
-                        <h5 class="card-title">Alaska</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-sm-6 col-lg-4">
-                <div class="card">
-                    <img src="assets/img/alaska.jpg" class="card-img-top" alt="alaska" />
-                    <div class="card-body">
-                        <h5 class="card-title">Alaska</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-sm-6 col-lg-4">
-                <div class="card">
-                    <img src="assets/img/alaska.jpg" class="card-img-top" alt="alaska" />
-                    <div class="card-body">
-                        <h5 class="card-title">Alaska</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-sm-6 col-lg-4">
-                <div class="card">
-                    <img src="assets/img/alaska.jpg" class="card-img-top" alt="alaska" />
-                    <div class="card-body">
-                        <h5 class="card-title">Alaska</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-sm-6 col-lg-4">
-                <div class="card">
-                    <img src="assets/img/alaska.jpg" class="card-img-top" alt="alaska" />
-                    <div class="card-body">
-                        <h5 class="card-title">Alaska</h5>
-                        <p class="card-text">
-                            Some quick example text to build on the card title and make up
-                            the bulk of the card's content.
-                        </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col col-sm-6 col-lg-4">
+          <div class="card">
+            <img
+              src="assets/img/alaska.jpg"
+              class="card-img-top"
+              alt="alaska"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Alaska</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-6 col-lg-4">
+          <div class="card">
+            <img
+              src="assets/img/alaska.jpg"
+              class="card-img-top"
+              alt="alaska"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Alaska</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-6 col-lg-4">
+          <div class="card">
+            <img
+              src="assets/img/alaska.jpg"
+              class="card-img-top"
+              alt="alaska"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Alaska</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-6 col-lg-4">
+          <div class="card">
+            <img
+              src="assets/img/alaska.jpg"
+              class="card-img-top"
+              alt="alaska"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Alaska</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- Offerte -->
+      <!-- Offerte -->
 
-        <div class="row m-2 mt-5 d-sm-none d-md-flex">
-            <h2 class="col col-12">Offerte del giorno</h2>
+      <div class="row m-2 mt-5 d-sm-none d-md-flex">
+        <h2 class="col col-12">Offerte del giorno</h2>
+      </div>
+      <div class="row m-2 d-sm-none d-md-flex">
+        <div class="col col-9 col-sm-9">
+          <img src="assets/img/balena.webp" alt="balena" width="100%" />
         </div>
-        <div class="row m-2 d-sm-none d-md-flex">
-            <div class="col col-9 col-sm-9">
-                <img src="assets/img/balena.webp" alt="balena" width="100%"/>
-            </div>
-            <div class="col col-3 col-sm-3">
-                <h2>Balena dell'Alaska</h2>
-                <code class="text-dark mb-3">16-05-1967</code>
-                <p class="mt-3">
-                    Ville a partire da €500 <br />non fartele sfuggire!
-                </p>
-                <button type="button" class="btn btn-dark">Best Offer</button>
-            </div>
+        <div class="col col-3 col-sm-3">
+          <h2>Balena dell'Alaska</h2>
+          <code class="text-dark mb-3">16-05-1967</code>
+          <p class="mt-3">
+            Ville a partire da €500 <br />non fartele sfuggire!
+          </p>
+          <button type="button" class="btn btn-dark">Best Offer</button>
         </div>
+      </div>
 
-        <!-- Last Minute -->
-        <div class="row m-2 mt-5">
-            <h2 class="col col-12">Last Minute</h2>
+      <!-- Last Minute -->
+      <div class="row m-2 mt-5">
+        <h2 class="col col-12">Last Minute</h2>
+      </div>
+      <div class="row m-2">
+        <div class="col col-2 col-sm-4 mb-sm-3 col-lg-2">
+          <img src="assets/img/balena.webp" alt="balena" width="90%" />
         </div>
-        <div class="row m-2">
-            <div class="col col-2 col-sm-4 mb-sm-4">
-                <img src="assets/img/balena.webp" alt="balena" width="90%" />
-            </div>
-            <div class="col col-2  col-sm-4 mb-sm-4">
-                <img src="assets/img/balena.webp" alt="balena" width="90%" />
-            </div>
-            <div class="col col-2  col-sm-4 mb-sm-4">
-                <img src="assets/img/balena.webp" alt="balena" width="90%" />
-            </div>
-            <div class="col col-2  col-sm-4 mb-sm-4">
-                <img src="assets/img/balena.webp" alt="balena" width="90%" />
-            </div>
-            <div class="col col-2  col-sm-4 mb-sm-4">
-                <img src="assets/img/balena.webp" alt="balena" width="90%" />
-            </div>
-            <div class="col col-2  col-sm-4 mb-sm-4">
-                <img src="assets/img/balena.webp" alt="balena" width="90%" />
-            </div>
-            
-            
+        <div class="col col-2 col-sm-4 mb-sm-3 col-lg-2">
+          <img src="assets/img/balena.webp" alt="balena" width="90%" />
         </div>
+        <div class="col col-2 col-sm-4 mb-sm-3 col-lg-2">
+          <img src="assets/img/balena.webp" alt="balena" width="90%" />
+        </div>
+        <div class="col col-2 col-sm-4 mb-sm-3 col-lg-2">
+          <img src="assets/img/balena.webp" alt="balena" width="90%" />
+        </div>
+        <div class="col col-2 col-sm-4 mb-sm-3 col-lg-2">
+          <img src="assets/img/balena.webp" alt="balena" width="90%" />
+        </div>
+        <div class="col col-2 col-sm-4 mb-sm-3 col-lg-2">
+          <img src="assets/img/balena.webp" alt="balena" width="90%" />
+        </div>
+      </div>
 
-        <!-- Dicono di noi -->
-        <div class="row m-2 mt-5">
-            <div class="col col-12 d-flex justify-content-center">
-                <h2>Dicono di noi</h2>
-            </div>
+      <!-- Dicono di noi -->
+      <div class="row m-2 mt-5">
+        <div class="col col-12 d-flex justify-content-center">
+          <h2>Dicono di noi</h2>
         </div>
-        <div class="row m-2">
-            <div class="col col-12 d-flex mb-2">
-                <img class="border border-info rounded-circle" src="assets/img/user.png" alt="user" width="50"
-                    height="50" />
-                <div class="ms-4">
-                    <h6>Username</h6>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
-                        optio dolore excepturi qui commodi ab animi, inventore pariatur
-                        fuga facere delectus fugiat omnis laborum quam maiores nulla
-                        soluta officiis. Consequuntur!
-                    </p>
-                </div>
-            </div>
-            <div class="col col-12 d-flex mb-2">
-                <img class="border border-info rounded-circle" src="assets/img/user.png" alt="user" width="50"
-                    height="50" />
-                <div class="ms-4">
-                    <h6>Username</h6>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
-                        optio dolore excepturi qui commodi ab animi, inventore pariatur
-                        fuga facere delectus fugiat omnis laborum quam maiores nulla
-                        soluta officiis. Consequuntur!
-                    </p>
-                </div>
-            </div>
-            <div class="col col-12 d-flex mb-2">
-                <img class="border border-info rounded-circle" src="assets/img/user.png" alt="user" width="50"
-                    height="50" />
-                <div class="ms-4">
-                    <h6>Username</h6>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
-                        optio dolore excepturi qui commodi ab animi, inventore pariatur
-                        fuga facere delectus fugiat omnis laborum quam maiores nulla
-                        soluta officiis. Consequuntur!
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="row m-2">
+        <div class="col col-12 d-flex mb-2">
+          <img
+            class="border border-info border-2 rounded-circle"
+            src="assets/img/user.png"
+            alt="user"
+            width="50"
+            height="50"
+          />
+          <div class="ms-4">
+            <h6>Username</h6>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+              optio dolore excepturi qui commodi ab animi, inventore pariatur
+              fuga facere delectus fugiat omnis laborum quam maiores nulla
+              soluta officiis. Consequuntur!
+            </p>
+          </div>
         </div>
-
-        <!-- Footer -->
-        <div class="row mt-4 pt-4 bg-dark text-white">
-            <div class="col col-12 d-flex justify-content-center">
-                <button type="button" class="btn btn-outline-secondary">
-                    Contattaci
-                </button>
-            </div>
-            <div class="col mt-3 col-12 d-flex justify-content-center">
-                <p>2021 Kalina Travel LTD. All Rights Deserved.</p>
-            </div>
+        <div class="col col-12 d-flex mb-2">
+          <img
+            class="border border-info border-2 rounded-circle"
+            src="assets/img/user.png"
+            alt="user"
+            width="50"
+            height="50"
+          />
+          <div class="ms-4">
+            <h6>Username</h6>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+              optio dolore excepturi qui commodi ab animi, inventore pariatur
+              fuga facere delectus fugiat omnis laborum quam maiores nulla
+              soluta officiis. Consequuntur!
+            </p>
+          </div>
         </div>
+        <div class="col col-12 d-flex mb-2">
+          <img
+            class="border border-info border-2 rounded-circle"
+            src="assets/img/user.png"
+            alt="user"
+            width="50"
+            height="50"
+          />
+          <div class="ms-4">
+            <h6>Username</h6>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+              optio dolore excepturi qui commodi ab animi, inventore pariatur
+              fuga facere delectus fugiat omnis laborum quam maiores nulla
+              soluta officiis. Consequuntur!
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-</body>
-
+    <!-- Footer -->
+    <div class="row mt-4 pt-4 bg-dark text-white">
+      <div class="col col-12 d-flex justify-content-center">
+        <button type="button" class="btn btn-outline-secondary">
+          Contattaci
+        </button>
+      </div>
+      <div class="col mt-3 col-12 d-flex justify-content-center">
+        <p>2021 Kalina Travel LTD. All Rights Deserved.</p>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
