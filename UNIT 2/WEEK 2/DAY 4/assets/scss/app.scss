@@ -1,0 +1,16 @@
+@import './partials/reset';
+@import './partials/button';
+@import './partials/variables';
+@import './partials/mixin';
+@import './partials/animations';
+
+html, body {
+    height: 100vh;
+    background-color: $backgroundColor;
+    color: $textColor;
+    font-family: $mainFontFamily;
+}
+
+header, body, .container {
+    width: 100%;
+}

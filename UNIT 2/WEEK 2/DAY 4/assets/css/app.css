@@ -1,0 +1,10 @@
+html, body {
+  height: 100vh;
+  background-color: #640fc5;
+  color: #f4f4f4;
+  font-family: "Roboto", sans-serif;
+}
+
+header, body, .container {
+  width: 100%;
+}/*# sourceMappingURL=app.css.map */
