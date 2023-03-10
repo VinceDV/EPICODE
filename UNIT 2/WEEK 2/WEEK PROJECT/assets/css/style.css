@@ -1,0 +1,15 @@
+ul {
+    list-style: none;
+    color: gray;
+    padding: 0;
+}
+a, a:hover {
+    text-decoration: none;
+    color: gray;
+}
+a:hover {
+    color: white;
+}
+select, img {
+    cursor: pointer;
+}
