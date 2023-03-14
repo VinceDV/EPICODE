@@ -22,6 +22,7 @@ const remove = function() {
     if(localStorage.getItem('Nome Utente')) {
         localStorage.clear()
         par.innerHTML = ''
+        istruzioni.innerHTML = ("Il nome utente e' stato eliminato.")
     } else {
         istruzioni.innerHTML = ('ERRORE! Non esiste al momento contenuto salvato.')
     }
