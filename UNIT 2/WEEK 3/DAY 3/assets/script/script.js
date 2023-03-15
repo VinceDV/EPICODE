@@ -8,7 +8,7 @@ fetch('https://striveschool-api.herokuapp.com/books')
     data.forEach(libro => {
     let sezioneLibri = document.getElementById('sezioneLibri')
     let nuovaCard = document.createElement('div')
-    nuovaCard.className = 'col col-md-2 col-lg-3 m-1 h-100'
+    nuovaCard.className = 'col col-sm-5 col-md-3 col-lg-3 m-1'
     let cartaCtn = document.createElement('div')
     cartaCtn.className = 'card cursor-pointer m-2'
     let cartaImg = document.createElement('img')
