@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CRUDEZON - Details</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">CRUDEZON</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./backoffice.html">Backoffice</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h2 class="mt-5 mb-3">Backoffice</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Item Name</label>
+              <input
+                class="form-control"
+                id="name"
+                aria-describedby="name input"
+                placeholder="Insert the Item name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="brand" class="form-label">Item Brand</label>
+              <input
+                class="form-control"
+                id="brand"
+                aria-describedby="name input"
+                placeholder="Insert the Item brand"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label"
+                >Item Description</label
+              >
+              <textarea
+                class="form-control"
+                id="description"
+                rows="6"
+                aria-describedby="name input"
+                placeholder="Add the Item description"
+                required
+              ></textarea>
+            </div>
+            <div class="mb-3">
+              <label class="form-label"></label>
+              <input
+                class="form-control"
+                id="img"
+                aria-describedby="name input"
+                placeholder="Insert img URL"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="price" class="form-label">Item Price</label>
+              <input
+                type="number"
+                class="form-control"
+                id="price"
+                aria-describedby="price input"
+                placeholder="Insert the Item price"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">INVIA</button>
+            <button
+              type="button"
+              class="btn btn-danger d-none"
+              onclick="handleDelete()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                class="bi bi-trash3"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const striveUrl = "https://striveschool-api.herokuapp.com/api/product/";
+      const myAPI =
+        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE0MmNhM2Y4MWI0MjAwMTM5YjI3ZGQiLCJpYXQiOjE2NzkwNDM3NDcsImV4cCI6MTY4MDI1MzM0N30.rUfuULiw5aDvwnizn8uW0BuSn7hYpqItu0P3ifmou3M";
+
+      let eventId = new URLSearchParams(window.location.search).get("eventId");
+      console.log("eventId", eventId);
+      // eventId può essere una stringa _id o null
+
+      if (eventId) {
+        // faccio una fetch, recupero i dati dell'evento e ripopolo il form
+        fetch(striveUrl + eventId, {
+          headers: {
+            Authorization: myAPI,
+          },
+        })
+          .then((response) => {
+            if (response.ok) {
+              return response.json();
+            } else {
+              return new Error("Error!");
+            }
+          })
+          .then((eventData) => {
+            console.log(eventData);
+            // ripopolo i campi del form!
+            document.getElementById("name").value = eventData.name;
+            document.getElementById("description").value =
+              eventData.description;
+            document.getElementById("brand").value = eventData.brand;
+            document.getElementById("img").value = eventData.imageUrl;
+            document.getElementById("price").value = eventData.price;
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      }
+
+      const saveEvent = async function (newEvent) {
+        try {
+          let url = eventId ? striveUrl + eventId : striveUrl;
+          let response = await fetch(url, {
+            method: eventId ? "PUT" : "POST",
+            body: JSON.stringify(newEvent),
+            headers: {
+              Authorization: myAPI,
+              "Content-Type": "application/json",
+            },
+          });
+          if (response.ok) {
+            alert("OGGETTO SALVATO CORRETTAMENTE");
+          } else {
+            alert("PROBLEMA NELLA CREAZIONE DELL'OGGETTO");
+          }
+        } catch (error) {
+          console.log(error);
+        }
+      };
+
+      let formReference = document.getElementsByTagName("form")[0];
+      formReference.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // vogliamo inviare alle API un nuovo evento da salvare
+        // raccolgo i dati del form:
+        let newEvent = {
+          name: document.getElementById("name").value,
+          description: document.getElementById("description").value,
+          brand: document.getElementById("brand").value,
+          imageUrl: document.getElementById("img").value,
+          price: document.getElementById("price").value,
+        };
+        console.log(newEvent);
+        saveEvent(newEvent);
+      });
+    </script>
+  </body>
+</html>
