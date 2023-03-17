@@ -79,7 +79,7 @@ const caricaFoto2 = () => {
   } 
 
   
-  btnReference.addEventListener('click',()=>{
+  loadBtn.addEventListener('click',()=>{
       fetch(standardUrl+fotoquery.value,{
           method:'GET',
           headers:{
@@ -90,25 +90,27 @@ const caricaFoto2 = () => {
           return response.json();
       })
       .then((foto)=>{
-          if(foto.photos.length===0){
+          if(foto.photos.length === 0){
               rowReference.innerHTML=``;
               rowReference.innerHTML=`<h2 class="text-danger mx-auto">La parola cercata non ha foto presenti sul nostro sito!</h2>`
               console.log('l\'ggetto cercato non ha album');
-          }else{
-          let arrayFoto=foto.photos;
+          } else {
+          let arrayFoto = foto.photos;
           //console.log(arrayFoto[0]);
           estraiFoto(arrayFoto);
           }
 
       })
-      .catch(err=>{console.log(err)});
-      fotoquery.value=''; 
+      .catch(err => {
+        console.log(err)
+      });
+      fotoquery.value = ''; 
       }
       
   )
 
-let btnHide=document.querySelector('hide');
-  const nascondiCard=(index)=>{
+let btnHide = document.querySelector('hide');
+  const nascondiCard = (index)=>{
       let divEliminato=document.getElementById(`${index}`);
       divEliminato.style.display='none';
       //console.log(divEliminato);
