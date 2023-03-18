@@ -100,26 +100,50 @@
                 required
               />
             </div>
-            <button type="submit" class="btn btn-primary">INVIA</button>
-            <button
-              type="button"
-              class="btn btn-danger d-none"
-              onclick="handleDelete()"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                fill="currentColor"
-                class="bi bi-trash3"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"
-                />
-              </svg>
+            <button type="submit" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">CREA / MODIFICA</button>
+            <button type="button" id="reset" class="btn btn-secondary">
+              RESET
+            </button>
+            <button type="button" id="cancella" class="btn btn-danger">
+              CANCELLA
             </button>
           </form>
+        </div>
+      </div>
+    </div>
+<!-- Modale -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Crea o modifica un elemento</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Sei sicuro di voler salvare/modificare il prodotto?
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancella</button>
+            <button type="button" id="saveChange" class="btn btn-success" data-bs-dismiss="modal">Salva</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Crea o modifica un elemento</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Sei sicuro di voler salvare/modificare il prodotto?
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancella</button>
+            <button type="button" id="saveChange" class="btn btn-success" data-bs-dismiss="modal">Salva</button>
+          </div>
         </div>
       </div>
     </div>
@@ -129,12 +153,51 @@
       crossorigin="anonymous"
     ></script>
     <script>
+
       const striveUrl = "https://striveschool-api.herokuapp.com/api/product/";
       const myAPI =
         "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE0MmNhM2Y4MWI0MjAwMTM5YjI3ZGQiLCJpYXQiOjE2NzkwNDM3NDcsImV4cCI6MTY4MDI1MzM0N30.rUfuULiw5aDvwnizn8uW0BuSn7hYpqItu0P3ifmou3M";
-
+      
       let eventId = new URLSearchParams(window.location.search).get("eventId");
       console.log("eventId", eventId);
+      let cancellaProdotto = function() {
+        fetch(striveUrl + eventId, {
+          method: 'DELETE',
+          headers: {
+              Authorization: myAPI,
+          }
+        })
+        .then(function (response) {
+          if (response.ok) {
+            document.getElementById("name").value = '';
+            document.getElementById("description").value =
+              ' ';
+            document.getElementById("brand").value = '';
+            document.getElementById("img").value = '';
+            document.getElementById("price").value = '';
+            alert('Prodotto cancellato correttamente')
+          } else {
+            alert('ERROR')
+          }
+        }) 
+      }
+
+      let cancella = document.getElementById('cancella')
+      cancella.addEventListener('click', function () {
+        cancellaProdotto()
+      });
+
+      let reset = document.getElementById('reset')
+      reset.addEventListener('click', function () {
+        document.getElementById("name").value = '';
+            document.getElementById("description").value =
+              ' ';
+            document.getElementById("brand").value = '';
+            document.getElementById("img").value = '';
+            document.getElementById("price").value = '';
+      })
+
+
       // eventId può essere una stringa _id o null
 
       if (eventId) {
@@ -186,7 +249,9 @@
           console.log(error);
         }
       };
+      let saveChange = document.getElementById('saveChange')
 
+      
       let formReference = document.getElementsByTagName("form")[0];
       formReference.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -200,7 +265,9 @@
           price: document.getElementById("price").value,
         };
         console.log(newEvent);
-        saveEvent(newEvent);
+        saveChange.addEventListener('click', function (){
+          saveEvent(newEvent);
+        })
       });
     </script>
   </body>
