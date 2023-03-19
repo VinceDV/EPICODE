@@ -33,7 +33,8 @@ const displayItems = function (items) {
                                 
                                 <p class="card-text text-primary">$${product.price}</p>
                                 <p class="card-text text-end">
-                                <a href="./backoffice.html?eventId=${product._id}" class="btn btn-primary">DETTAGLI</a>
+                                <a href="./details.html?eventId=${product._id}" class="btn btn-primary">DETTAGLI</a>
+                                <a href="./backoffice.html?eventId=${product._id}" class="btn btn-warning">MODIFICA</a>
                                                 
                                 </p>
                             </div>
