@@ -96,3 +96,12 @@ const createItems = function () {
       console.log(err)
     })
 }
+const loader = document.getElementById("loader")
+
+    function setLoading(loading) {
+      if (loading) {
+        loader.classList.remove("d-none")
+      } else {
+        loader.classList.add("d-none")
+      }
+    }

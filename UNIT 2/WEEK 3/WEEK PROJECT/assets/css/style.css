@@ -1,0 +1,13 @@
+#loader .spinner-grow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  #loader .overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000c2
+  }
